@@ -1,0 +1,152 @@
+.portfolio .container {
+    position: relative;
+}
+
+.portfolio .container .sections-title {
+    margin-bottom: var(--third-margin);
+}
+
+.portfolio .container p {
+    font-size: var(--fs-text);
+    font-weight: var(--fw-regular);
+    color: var(--darkest-color);
+    text-align: left;
+    margin-bottom: var(--third-margin);
+}
+
+.portfolio .container #Portfolio {
+    position: absolute;
+    right: 0;
+    width: 250px;
+    border: 3px solid var(--primary-color);
+    border-radius: var(--primary-border-radius);
+    font-size: var(--fs-text);
+    font-weight: var(--fw-semi-bold);
+    color: var(--darkest-color);
+    text-transform: capitalize;
+    text-align: left;
+    outline: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+@media screen and (max-width: 60em) {
+    .portfolio .container #Portfolio {
+        right: var(--neutral-distance);
+    }
+}
+
+@media screen and (max-width: 48em) {
+    .portfolio .container #Portfolio {
+        right: var(--fourth-distance);
+    }
+}
+
+@media screen and (max-width: 30em) {
+    .portfolio .container #Portfolio {
+        width: calc(100% - var(--third-distance));
+    }
+}
+.portfolio .container .boxes-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: var(--primary-margin);
+    gap: var(--fourth-gap);
+}
+
+.portfolio .container .boxes-container .box {
+    width: calc((100% - var(--third-distance)) / 3);
+    aspect-ratio: 1;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+@media screen  and (max-width: 48em) {
+    .portfolio .container .boxes-container .box {
+        width: calc((100% - var(--fourth-distance)) / 2);
+    }
+}
+
+@media screen  and (max-width: 30em) {
+    .portfolio .container .boxes-container .box {
+        width: 100%;
+    }
+}
+
+.portfolio .container .boxes-container .box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 100%;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--darkest-color);
+    opacity: 0.7;
+    transition: var(--primary-transition);
+}
+
+.portfolio .container .boxes-container .box:hover::before {
+    left: 0;
+}
+
+
+.portfolio .container .boxes-container .box > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.portfolio .container .boxes-container .box p {
+    font-size: var(--fs-box-title);
+    font-weight: var(--fw-semi-bold);
+    color: var(--lightest-color);
+    position: absolute;
+    top: 45%;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    transition: var(--primary-transition);
+}
+
+.portfolio .container .boxes-container .box:hover p {
+    opacity: 1;
+}
+
+/* animation  */
+.portfolio p {
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: var(--primary-transition);
+    transition-delay: var(--primary-transition-delay);
+}
+
+.portfolio select {
+    transform: translateX(100%);
+    opacity: 0;
+    transition: var(--primary-transition);
+    transition-delay: var(--primary-transition-delay);
+}
+
+.appearence p,
+.appearence select {
+    transform: translateX(0%);
+    opacity: 1;
+}
+
+.portfolio .boxes-container {
+    opacity: 0;
+    transform: scale(0);
+    transition: var(--primary-transition);
+    transition-delay: var(--neutral-transition-delay);
+}
+
+.appearence .boxes-container {
+    opacity: 1;
+    transform: scale(1);
+}

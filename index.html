@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./assets/images/logo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="ibrahim balamy portfolio Website">
+    <title>ibrahim Balamy</title>
+    
+
+    <!-- google fonts files -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- fontawesome files  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- bootstrap files  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <!-- header  -->
+    <header class="header" id="header">
+      <nav class="navbar navbar-expand-lg w-100 position-fixed top-0 z-3">
+        <div class="container-md ">
+          <a class="navbar-brand" href="#">
+            <img loading="lazy" class="logo img-fluid" src="./assets/images/logo.svg" alt="logo">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="menu-icon fa-solid fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0 ms-auto d-flex align-items-center gap-1">
+              <li class="nav-item">
+                <a class="nav-link active text-center text-capitalize fw-semibold d-flex align-items-center" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-center text-capitalize fw-semibold d-flex align-items-center" href="#about">about us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-center text-capitalize fw-semibold d-flex align-items-center" href="#portfolio">my portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-center text-capitalize fw-semibold d-flex align-items-center" href="#contact">contact me</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- main  -->
+    <main>
+      <!-- home section  -->
+      <section class="home" id="home">
+        <div class="container d-flex-space-between">
+          <div class="content">
+            <h1>Hello, I'm ibrahim </h1>
+            <p>A passionate front-end with an unwavering love for bringing ideas to life through captivating visuals. As an artist and storyteller, I believe that design is the bridge between imagination and reality. I welcome you to explore my journey, where every pixel, line, and color has a purpose.</p>
+            <div class="btn-container">
+              <button title="button" id="explore">explore my work</button>
+              <button title="button" id="collaborate">let's collaborate</button>
+            </div>
+          </div>
+          <div class="image-container d-flex-centred">
+            <img loading="lazy" src="./assets/images/yassine-profil.png" alt="profil">
+          </div>
+        </div>
+      </section>
+
+      <!-- about section  -->
+      <section class="about" id="about">
+        <div class="container">
+          <h2 class="sections-title">about us</h2>
+          <div class="content-container d-flex-space-between">
+          <div class="image-container">
+            <img loading="lazy" src="./assets/images/yassine-profil.png" alt="^profil">
+          </div>
+          <div class="content">
+            <h3>Hi, I'm <span class="colored"> Yassine</span> ben bahcine</h3>
+            <p>
+              my name is  <span class="colored">YASSINE.</span> I am a <span class="colored">professional graphic designer</span> with over 4 years of experience. I have much experience in <span class="colored">designing Business cards</span>, <span class="colored">Letterheads</span>, <span class="colored">Logos</span>, and <span class="colored">Flyers</span>. I use <span class="colored">Adobe Illustrator</span> and <span class="colored">Adobe Photoshop</span> to design the graphics for you. Not only that, but I will provide high-quality work that will happy all my clients. I also provide <span class="colored">AI</span> or <span class="colored">PSD</span> files. I will complete many projects with customer satisfaction. Furthermore, I completed my 2 year diploma in graphic design. If you have work related to my skills, then contact me.
+            </p>
+          </div>
+        </div>
+        </div>
+      </section>
+
+      
+      <!-- portfolio section  -->
+      <section class="portfolio" id="portfolio">
+        <div class="container">
+          <h2 class="sections-title">my portfolio</h2>
+          <p>a passionate graphic designer with a keen eye for detail and a love for all things creative. From a young age, I've been drawn to the world of design, finding beauty and inspiration in everyday objects. With a background in visual arts and a degree in Graphic Design, I've honed my skills to</p>
+          <select name="portfolio" id="Portfolio">
+            <option value="all">all</option>
+            <option value="di">design industriel</option>
+            <option value="ili">illustration</option>
+            <option value="cov">les covertures</option>
+            <option value="social-media">social media</option>
+            <option value="logo">les logos</option>
+          </select>
+          <div class="boxes-container">
+            <div class="box" data-category="social-media">
+              <img loading="lazy" src="./assets/images/post1.jpg" alt="post1.jpg">
+              <p>#social media</p>
+            </div>
+            <div class="box" data-category="social-media">
+              <img loading="lazy" src="./assets/images/post2.jpg" alt="post2.jpg">
+              <p>#social media</p>
+            </div>
+            <div class="box" data-category="social-media">
+              <img loading="lazy" src="./assets/images/post3.jpg" alt="post3.jpg">
+              <p>#social media</p>
+            </div>
+            <div class="box" data-category="social-media">
+              <img loading="lazy" src="./assets/images/post4.jpg" alt="post4.jpg">
+              <p>#social media</p>
+            </div>
+            <div class="box" data-category="social-media">
+              <img loading="lazy" src="./assets/images/post5.jpg" alt="post5.jpg">
+              <p>#social media</p>
+            </div>
+            <div class="box" data-category="social-media">
+              <img loading="lazy" src="./assets/images/post6.jpg" alt="post6.jpg">
+              <p>#social media</p>
+            </div>
+            <div class="box" data-category="di">
+              <img loading="lazy" src="./assets/images/di-1.png" alt="post-1">
+              <p>#design industriel</p>
+            </div>
+            <div class="box" data-category="di">
+              <img loading="lazy" src="./assets/images/di-2.png" alt="post-2">
+              <p>#design industriel</p>
+            </div>
+            <div class="box" data-category="di">
+              <img loading="lazy" src="./assets/images/di-3.png" alt="post-3">
+              <p>#design industriel</p>
+            </div>
+            <div class="box" data-category="di">
+              <img loading="lazy" src="./assets/images/di-4.png" alt="post-4">
+              <p>#design industriel</p>
+            </div>
+            <div class="box" data-category="di">
+              <img loading="lazy" src="./assets/images/di-5.png" alt="post-5">
+              <p>#design industriel</p>
+            </div>
+            
+            <div class="box" data-category="ili">
+              <img loading="lazy" src="./assets/images/ili-1.png" alt="ili-1">
+              <p>#illustration</p>
+            </div>
+            <div class="box" data-category="ili">
+              <img loading="lazy" src="./assets/images/ili-2.png" alt="ili-2">
+              <p>#illustration</p>
+            </div>
+            <div class="box" data-category="ili">
+              <img loading="lazy" src="./assets/images/ili-3.png" alt="ili-3">
+              <p>#illustration</p>
+            </div>
+
+            <div class="box" data-category="cov">
+              <img loading="lazy" src="./assets/images/cov-1.png" alt="cov-1">
+              <p>#les covertures</p>
+            </div>
+            <div class="box" data-category="cov">
+              <img loading="lazy" src="./assets/images/cov-2.png" alt="cov-2">
+              <p>#les covertures</p>
+            </div>
+            <div class="box" data-category="cov">
+              <img loading="lazy" src="./assets/images/cov-3.png" alt="cov-3">
+              <p>#les covertures</p>
+            </div>
+
+            <div class="box" data-category="logo">
+              <img loading="lazy" src="./assets/images/logo-1.png" alt="logo-1">
+              <p>#les logos</p>
+            </div>
+            <div class="box" data-category="logo">
+              <img loading="lazy" src="./assets/images/logo-2.png" alt="logo-2">
+              <p>#les logos</p>
+            </div>
+            <div class="box" data-category="logo">
+              <img loading="lazy" src="./assets/images/logo-3.png" alt="logo-3">
+              <p>#les logos</p>
+            </div>
+            <div class="box" data-category="logo">
+              <img loading="lazy" src="./assets/images/logo-4.png" alt="logo-4">
+              <p>#les logos</p>
+            </div>
+
+          </div>
+        </div>
+      </section>
+      
+      <!-- contact section  -->
+      <section class="contact" id="contact">
+        <div class="container">
+          <h2 class="sections-title">contact me</h2>
+          <p>a passionate graphic designer with a keen eye for detail and a love for all things creative. From a young age, I've been drawn to the world of design, finding beauty and inspiration in everyday objects. With a background in visual arts and a degree in Graphic Design, I've honed my skills to </p>
+          <form action="https://formsubmit.co/yassinebenbahcine99@gmail.com" method="POST">
+            <div  class="d-flex-space-between">
+              <input type="text" name="name" id="name"  placeholder="name" required/>
+              <input type="email" name="email" id="email" placeholder="email">
+            </div>
+            <textarea name="message" id="message" placeholder="message or comments..." required></textarea>
+            <button title="button" type="submit">send</button>
+          </form>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- footer  -->
+    <footer class="footer" id="footer">
+      <div class="container d-flex-space-between">
+        <div class="content d-flex-centred">
+          <img loading="lazy" src="./assets/images/logo.svg" alt="logo">
+          <p>© copyright 2023- 2022</p>
+        </div>
+        <div class="social-media-icones d-flex-centred">
+          <a aria-label="it's a lable" href="" target="_blank">
+            <i class="fa-brands fa-behance"></i>
+          </a>
+          <a aria-label="it's a lable" href="" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a aria-label="it's a lable" href="" target="_blank">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a aria-label="it's a lable" href="" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- go to the top button  -->
+    <button title="button" class="top d-flex-centred">
+      <i class="fa-solid fa-chevron-up"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>

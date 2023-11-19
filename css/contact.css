@@ -1,0 +1,102 @@
+.contact .container .sections-title {
+    margin-bottom: var(--third-margin);
+}
+
+.contact .container p {
+    width: 100%;
+    font-size: var(--fs-text);
+    font-weight: var(--fw-regular);
+    color: var(--darkest-color);
+    margin-bottom: var(--neutral-margin);
+}
+
+.contact .container form {
+    width: 100%;
+    height: auto;
+}
+
+.contact .container form div {
+    width: 100%;
+    height: auto;
+    margin-bottom: var(--third-margin);
+}
+
+@media screen and (max-width: 48em) {
+    .contact .container form div {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+}
+
+.contact .container form input {
+    width: 48%;
+    height: 50px;
+    border: 3px solid var(--primary-color);
+    border-radius: var(--primary-border-radius);
+    padding-inline: var(--fourth-padding);
+    font-size: var(--fs-text);
+    font-weight: var(--fw-regular);
+    color: var(--darkest-color);
+}
+
+@media screen and (max-width: 48em) {
+    .contact .container form div input {
+        width: 100%;
+        margin-bottom: var(--fourth-margin);
+    }
+}
+
+.contact .container form :is(input, textarea) {
+    border: 3px solid var(--primary-color);
+    border-radius: var(--primary-border-radius);
+    padding-inline: var(--fourth-padding);
+    font-size: var(--fs-text);
+    font-weight: var(--fw-regular);
+    color: var(--darkest-color);
+}
+
+.contact .container form :is(input, textarea)::placeholder {
+    text-transform: capitalize;
+}
+
+.contact .container form textarea {
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 150px;
+    padding-top: var(--fourth-padding);
+    margin-bottom: var(--third-margin);
+}
+
+.contact .container form button {
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: var(--primary-border-radius);
+    background-color: var(--primary-color);
+    font-size: var(--fs-button);
+    font-weight: var(--fw-semi-bold);
+    color: var(--lightest-color);
+    transition: var(--primary-transition);
+    cursor: pointer;
+}
+
+.contact .container form button:hover,
+.contact .container form button:focus,
+.contact .container form button:active {
+    background-color: var(--darkest-color);
+}
+
+/* animation  */
+.contact p,
+.contact form {
+    transform: scale(0.3);
+    opacity: 0;
+    transition: var(--primary-transition);
+    transition-delay: var(--primary-transition-delay);
+}
+
+.appearence p, 
+.appearence form {
+    opacity: 1;
+    transform: scale(1);
+}

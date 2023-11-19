@@ -1,0 +1,78 @@
+.header {
+    height: 80px;
+}
+
+@media screen and (max-width:62em) {
+    .header {
+        height: auto;
+    }
+}
+
+.navbar {
+    height: inherit;
+    background-color: var(--lightest-color);
+    padding: 0;
+}
+ 
+.navbar .container-md {
+    height: inherit;
+}
+
+.logo {
+    width: 50px;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+@media screen and (max-width: 62em) {
+    .nav-item {
+        width: 100%;
+        justify-content: center;
+    }
+    
+}
+
+.nav-link {
+    color: var(--darkest-color);
+}
+ 
+.nav-link:hover,
+.nav-link:focus,
+.nav-link.active {
+    height: inherit;
+    color: var(--lightest-color) !important;
+    background-color: var(--primary-color);
+}
+
+@media screen and (max-width: 62em) {
+    .nav-link {
+        width: 100%;
+        justify-content: center;
+    }
+}
+ 
+.navbar-toggler {
+    color: var(--lightest-color);
+    border-color: var(--primary-color);
+}
+
+.navbar-toggler-icon {
+    color: inherit;
+}
+ 
+.menu-icon {
+    color: var(--primary-color);
+}
+ 
+.navbar-collapse  {
+    height: inherit;
+}
+ 
+.navbar-collapse ul {
+    height: inherit;
+    background-color: var(--lightest-color);
+}
